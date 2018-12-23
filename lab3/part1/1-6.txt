@@ -1,0 +1,7 @@
+#!/bin/bash
+path=/home/gremlin
+echo "Gremlin\'s home catalog"
+echo "contains regular files:"
+ls $path | wc -l
+echo "contains hidden files:"
+ls -a $path | ls -a ~ | grep ^"\." | wc -l
