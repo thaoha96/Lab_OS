@@ -1,0 +1,89 @@
+    1  su
+    2  ps xaf
+    3  ps xawf -eo pid,user,cgroup,args
+    4  systemd -cgls
+    5  systemd-cgls
+    6  ls -l /usr/ilib/systemd/system
+    7  ls -l /usr/lib/systemd/system
+    8  ls -l /run/systemd/system
+    9  ls -l /run/systemd/
+   10  ls -l /etc/systemd/system
+   11  systmctl -t help
+   12  systemctl -t help
+   13  systemctl status timer
+   14  systemctl status swap
+   15  sudo systemctl status swap
+   16  systemctl status
+   17  systemctl --type=service
+   18  systemctl status gdmm.service
+   19  systemctl status gdm.service
+   20  systemctl status auditd.service
+   21  systemctl is-active auditd.service
+   22  systemctl is-enabled auditd.service
+   23  history >>lab-service
+    1  su
+    2  ps xaf
+    3  ps xawf -eo pid,user,cgroup,args
+    4  systemd -cgls
+    5  systemd-cgls
+    6  ls -l /usr/ilib/systemd/system
+    7  ls -l /usr/lib/systemd/system
+    8  ls -l /run/systemd/system
+    9  ls -l /run/systemd/
+   10  ls -l /etc/systemd/system
+   11  systmctl -t help
+   12  systemctl -t help
+   13  systemctl status timer
+   14  systemctl status swap
+   15  sudo systemctl status swap
+   16  systemctl status
+   17  systemctl --type=service
+   18  systemctl status gdmm.service
+   19  systemctl status gdm.service
+   20  systemctl status auditd.service
+   21  systemctl is-active auditd.service
+   22  systemctl is-enabled auditd.service
+   23  history >>lab-service
+   24  history
+   25  systemctl list-dependencies --after audit.service
+   26  systemctl list-dependencies --before  audit.service
+   27  systemctl list-dependencies --before  gdm.service
+   28  systemctl list-dependencies --after  gdm.service
+   29  systemctl list-units --type=service -all
+   30  systemctl list-units --type=service --all
+   31  systemctl list-units --type=socket --all
+   32  systemctl --failed --type=service
+   33  systemctl list-unit-files --type=service
+   34  systemctl --failed --type=service
+   35  curl 127.0.0.1
+   36  systemctl status httpd.service
+   37  systemctl start httpd.service
+   38  sudo yum install httpd
+   39  apachectl start
+   40  apachectl status
+   41  systemctl status httpd.service
+   42  curl 127.0.0.1
+   43  systemctl restart htttp.service
+   44  systemctl restart httpd.service
+   45  systemctl status httpd.service
+   46  systemctl stop httpd.service
+   47  systemctl enable  httpd.service
+   48  systemctl disable httpd.service
+   49  systemctl mask httpd.service
+   50  systemctl unmask httpd.service
+   51  systemctl list-units --type=target
+   52  systemctl list-units --type=target --all
+   53  systemctl get-default
+   54  ls -l /etc/systemd/system/default.target
+   55  systemctl set-default multi-user.target
+   56  systemctl isolate multi-user.target
+   57  systemctl isolate rescue.target
+   58  systemcctl poweroff
+   59  systemctl poweroff
+   60  history
+   61  systemctl halt
+   62  systemtl --no-wall poweroff
+   63  systemctl --no-wall poweroff
+   64  systemctl --no-wall reboot
+   65  history
+   66  history >>lab-service
