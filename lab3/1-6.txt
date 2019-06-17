@@ -1,6 +1,6 @@
 #!/bin/bash
-path=/home/gremlin
-echo "Gremlin\'s home catalog"
+path=/home/sweetherb
+echo "Sweetherb\'s home catalog"
 echo "contains regular files:"
 ls $path | wc -l
 echo "contains hidden files:"
